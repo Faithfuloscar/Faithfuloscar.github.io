@@ -15,3 +15,10 @@
     border-style: dashed;
     border-color: blue;
 }
+
+header{
+    text-align: center;
+    padding: 1rem;
+    border-style: dashed;
+    border-color: purple;
+}
