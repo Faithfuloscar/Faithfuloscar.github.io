@@ -1,13 +1,16 @@
+/* controls the section that falls under intro class */
 .intro{
     border-style: dashed;
     border-color: green;
 }
 
+/* controls the section that falls under main class */
 .main{
     border-style: dashed;
     border-color: red;
 }
 
+/* controls the section that falls under sidebar class */
 .sidebar{
     border-style: dashed;
     border-color: blue;
