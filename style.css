@@ -1,0 +1,21 @@
+[role=banner] {
+    border-style: dashed;
+}
+
+.summary{
+    border-style: dashed;
+}
+
+.preamble{
+    border-style: dashed;
+}
+
+.main{
+    border-style: dashed;
+    border-color: red;
+}
+
+.sidebar{
+    border-style: dashed;
+    border-color: blue;
+}
