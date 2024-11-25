@@ -1,13 +1,6 @@
-[role=banner] {
+.intro{
     border-style: dashed;
-}
-
-.summary{
-    border-style: dashed;
-}
-
-.preamble{
-    border-style: dashed;
+    border-color: green;
 }
 
 .main{
