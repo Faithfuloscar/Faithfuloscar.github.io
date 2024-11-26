@@ -16,9 +16,19 @@
     border-color: blue;
 }
 
+/* controls the section that falls under header */
 header{
     text-align: center;
-    padding: 1rem;
+    padding: 16px;
     border-style: dashed;
     border-color: purple;
+}
+
+/* controls the section that falls under footer */
+footer{
+    border-style: dashed;
+    border-color: brown;
+    background-color: rgb(214, 152, 211);
+    text-align: center;
+    padding: 16px;
 }
