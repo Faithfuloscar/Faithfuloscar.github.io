@@ -16,10 +16,17 @@
     border-color: blue;
 }
 
+/* controls the div page-wrapper section */
+.page-wrapper {
+    display: flex;
+    flex-direction: column; /* stacks elements vertically*/
+    min-height: 100vh; /* makes it take up the full viewport height */
+}
+
 /* controls the section that falls under header */
 header{
-    text-align: center;
-    padding: 16px;
+    text-align: center; /* aligns text to the center */
+    padding: 16px; /* adds padding */
     border-style: dashed;
     border-color: purple;
 }
@@ -28,7 +35,7 @@ header{
 footer{
     border-style: dashed;
     border-color: brown;
-    background-color: rgb(214, 152, 211);
-    text-align: center;
-    padding: 16px;
+    background-color: rgb(214, 152, 211); /* background color */
+    text-align: center; /* aligns the text to the center */
+    padding: 16px; /* adds padding */
 }
