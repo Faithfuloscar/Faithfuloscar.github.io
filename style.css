@@ -1,20 +1,28 @@
+/* general reset: removes  defaults and sets box-sizing */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
 /* page wrapper class targeted */
 .page-wrapper {
     display: flex; /* allows for flex layout */
     flex-direction: column; /* stacks elements vertically */
     min-height: 100vh; /* makes the wrapper span the full viewport height */
+    padding: 30px;
 }
 
 /* styles the role=banner */
 header[role="banner"]{
     padding: 20px; /*adds space around the header */
     text-align: center; /* centers the text */
-}
-
-/* targets the the header element */
-header {
+    background-color: aquamarine; /* adds background color to header */
     font-size: 20px; /* sets the font size */
 }
+
 
 /* targets the main container */
 .main {
@@ -28,7 +36,42 @@ header {
 
 /* targets the sidebar container */
 .sidebar {
-    flex: 1 0 250px; /* makes the sidebar flexible with a width of 250px */
     padding: 20px; /* adds space inside the sidebar */
+    gap: 20px; /* spacing between child elements */
+    justify-content: center; /* centers children horizontally */
+    align-items: center; /* centers children vertically */
+}
+
+/* sidebar nav list */
+.sidebar nav ul {
+    gap: 20px; /* adds spacing between list items */
+    padding: 0; /* removes default padding */
+    margin: 0; /* removes default margin */
+    list-style: none; /*removes bullet points from list */
+}
+
+/* sidebar list items */
+.sidebar nav ul li {
+    display: inline-block; /* aligns list items in a single line */
+
+}
+
+/* sidebar links */
+.sidebar a {
+    font-size: 16px; /* sets font size */
+    text-align: left; /* aligns text left */
+    text-decoration: none; /* removes underline */
+    padding: 5px; /* adds spacing inside the link area */
+}
+
+/* sidebar links hover effect */
+.sidebar a:hover {
+    background-color: aqua; /* hover effect */
+}
+
+/* content sections */
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    margin-bottom: 10px; /* adds spacing below each section */
+    padding: 10px; /* adds spacing inside each section */
 }
 
