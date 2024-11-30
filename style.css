@@ -5,3 +5,8 @@
     min-height: 100vh; /* makes the wrapper span the full viewport height */
 }
 
+/* styles the role=banner */
+header[role="banner"]{
+    padding: 20px;
+    text-align: center;
+}
