@@ -43,6 +43,10 @@ header[role="banner"]{
     text-decoration: underline;
 }
 
+.summary a:hover {
+    background-color: #aaaaaa;
+}
+
 
 /* targets the main container */
 .main {
