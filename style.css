@@ -16,3 +16,12 @@ header {
     font-size: 20px; /* sets the font size */
 }
 
+/* targets the main container */
+.main {
+    display: flex; /* creates a flexible layout for child elements */
+    flex-wrap: wrap; /* allows for the elements to wrap onto a new line */
+    gap: 20px; /* adds space between child elements */
+    padding: 20px; /* adds space around the element */
+    border-style: dashed; /* creates a dashed border */
+    border-color: blue; /* changes dashed border color to blue */
+}
