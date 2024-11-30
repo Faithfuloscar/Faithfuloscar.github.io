@@ -25,3 +25,10 @@ header {
     border-style: dashed; /* creates a dashed border */
     border-color: blue; /* changes dashed border color to blue */
 }
+
+/* targets the sidebar container */
+.sidebar {
+    flex: 1 0 250px; /* makes the sidebar flexible with a width of 250px */
+    padding: 20px; /* adds space inside the sidebar */
+}
+
