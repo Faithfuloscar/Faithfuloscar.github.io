@@ -7,6 +7,12 @@
 
 /* styles the role=banner */
 header[role="banner"]{
-    padding: 20px;
-    text-align: center;
+    padding: 20px; /*adds space around the header */
+    text-align: center; /* centers the text */
 }
+
+/* targets the the header element */
+header {
+    font-size: 20px; /* sets the font size */
+}
+
