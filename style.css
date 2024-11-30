@@ -8,15 +8,17 @@ body, h1, h2, h3, p, ul, li, a {
 }
 
 #css-zen-garden {
-    background-color: #083c5d;
+    background-color: #ffffff;
+    transition: background-color 0.5s ease;
+    margin: auto;
+    width: 700px;
 }
 
 /* page wrapper class targeted */
 .page-wrapper {
     display: flex; /* allows for flex layout */
-    flex-direction: column; /* stacks elements vertically */
-    min-height: 100vh; /* makes the wrapper span the full viewport height */
-    padding: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
 }
 
 /* styles the role=banner */
@@ -25,26 +27,27 @@ header[role="banner"]{
     text-align: center; /* centers the text */
     background-color: #328cc1; /* adds background color to header */
     font-size: 20px; /* sets the font size */
-    color: #d98310;
-    -webkit-text-stroke: .25px #083c5d ;
+    color: #FFB5C0;
+    -webkit-text-stroke: .15px #ffffff ;
+    border-style: solid;
+    border-color: #FFB5C0;
+    border-radius: 15px;
 }
 
 .summary {
     margin-top: 20px;
-    width: 250px;
-    justify-content: center;
+    text-align: center;
     background-color: #328cc1;
-    color: #d98310;
-    -webkit-text-stroke: .25px #083c5d;
+    -webkit-text-stroke: .05px #e48913;
 }
 
 .summary a{
-    color: #1d2731;
-    text-decoration: underline;
+    color: #ffffff;
+    text-decoration: underline #ffffff;
 }
 
 .summary a:hover {
-    background-color: #aaaaaa;
+    background-color: #bbbbbb;
 }
 
 
@@ -54,8 +57,7 @@ header[role="banner"]{
     flex-wrap: wrap; /* allows for the elements to wrap onto a new line */
     gap: 20px; /* adds space between child elements */
     padding: 20px; /* adds space around the element */
-    border-style: dashed; /* creates a dashed border */
-    border-color: blue; /* changes dashed border color to blue */
+
 }
 
 /* targets the sidebar container */
@@ -63,6 +65,7 @@ header[role="banner"]{
     padding: 20px; /* adds space inside the sidebar */
     justify-content: center; /* centers children horizontally */
     align-items: center; /* centers children vertically */
+    
 }
 
 /* sidebar nav list */
@@ -70,31 +73,51 @@ header[role="banner"]{
     padding: 0; /* removes default padding */
     margin: 0; /* removes default margin */
     list-style: none; /*removes bullet points from list */
+    margin-bottom: 20px;
 }
 
 /* sidebar list items */
 .sidebar nav ul li {
     display: inline-block; /* aligns list items in a single line */
-
+    color: #FFB5C0;
 }
 
 /* sidebar links */
-.sidebar a {
+.sidebar a{
     font-size: 16px; /* sets font size */
     text-align: left; /* aligns text left */
     text-decoration: none; /* removes underline */
     padding: 5px; /* adds spacing inside the link area */
+    color: #ffffff;
 }
 
 /* sidebar links hover effect */
 .sidebar a:hover {
-    background-color: aqua; /* hover effect */
+    background-color: #FFB5C0; /* hover effect */
 }
 
 /* content sections */
-.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+.summary, .preamble, .explanation, .participation, .benefits, .requirements, .zen-resources ul, .sidebar nav ul{
     margin-bottom: 10px; /* adds spacing below each section */
     padding: 10px; /* adds spacing inside each section */
     font-size: 18px;
+    border-style: solid;
+    border-color: #FFB5C0;
+    background-color: #328cc1;
+    border-radius: 15px;
 }
 
+.summary p, .preamble p, .explanation p, .participation p, .benefits p, .requirements p {
+ color: #FFB5C0;
+}
+
+.summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
+color: #fdaa48;
+-webkit-text-stroke: .25px #a57f4e;
+font-size: 22px;
+}
+
+.participation a, .requirements a {
+    color: #ffffff;
+    text-decoration: underline #ffffff;
+}
