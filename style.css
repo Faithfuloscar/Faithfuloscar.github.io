@@ -7,6 +7,10 @@ body, h1, h2, h3, p, ul, li, a {
     box-sizing: border-box;
 }
 
+#css-zen-garden {
+    background-color: #083c5d;
+}
+
 /* page wrapper class targeted */
 .page-wrapper {
     display: flex; /* allows for flex layout */
@@ -19,8 +23,24 @@ body, h1, h2, h3, p, ul, li, a {
 header[role="banner"]{
     padding: 20px; /*adds space around the header */
     text-align: center; /* centers the text */
-    background-color: aquamarine; /* adds background color to header */
+    background-color: #328cc1; /* adds background color to header */
     font-size: 20px; /* sets the font size */
+    color: #d98310;
+    -webkit-text-stroke: .25px #083c5d ;
+}
+
+.summary {
+    margin-top: 20px;
+    width: 250px;
+    justify-content: center;
+    background-color: #328cc1;
+    color: #d98310;
+    -webkit-text-stroke: .25px #083c5d;
+}
+
+.summary a{
+    color: #1d2731;
+    text-decoration: underline;
 }
 
 
@@ -37,14 +57,12 @@ header[role="banner"]{
 /* targets the sidebar container */
 .sidebar {
     padding: 20px; /* adds space inside the sidebar */
-    gap: 20px; /* spacing between child elements */
     justify-content: center; /* centers children horizontally */
     align-items: center; /* centers children vertically */
 }
 
 /* sidebar nav list */
 .sidebar nav ul {
-    gap: 20px; /* adds spacing between list items */
     padding: 0; /* removes default padding */
     margin: 0; /* removes default margin */
     list-style: none; /*removes bullet points from list */
@@ -73,5 +91,6 @@ header[role="banner"]{
 .summary, .preamble, .explanation, .participation, .benefits, .requirements {
     margin-bottom: 10px; /* adds spacing below each section */
     padding: 10px; /* adds spacing inside each section */
+    font-size: 18px;
 }
 
