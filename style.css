@@ -9,3 +9,9 @@
     max-width: 1200px; /* limits page width for readability */
     margin: auto; /* centers the layout horizontally */
 }
+
+/* main content area */
+.main {
+    grid-area: main; /* assign the main content to the grid area 'main' */
+    padding: 20px; /* adds padding inside the section */
+}
