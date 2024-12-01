@@ -1,4 +1,11 @@
 
+/* container for the whole page */
 .page-wrapper {
-    display: grid;
+    display: grid; /*CSS grid layout */
+    grid-template-areas: "intro intro" "main sidebar" "footer footer"; /* defines named grid areas */
+    grid-template-columns: 2fr 1fr; /* makes the main area wider than the sidebar */
+    gap: 20px; /* adds space between items */
+    padding: 20px; /* adds padding around content */
+    max-width: 1200px; /* limits page width for readability */
+    margin: auto; /* centers the layout horizontally */
 }
