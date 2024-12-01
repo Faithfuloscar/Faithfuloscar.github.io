@@ -13,7 +13,9 @@ body, h1, h2, h3, p, ul, li, a {
 /* main container targeted */
 #css-zen-garden {
     background-color: #ffffff; /* sets background color */
-    transition: background-color 0.5s ease; /* smooth transition for background */
+    background-image: url('/images/cherry_blossom.jpg'); /* path to background image */
+    background-size: cover; /* makes the image cover the entire element */
+    background-repeat: no-repeat; /* prevents image from repeating */
     margin: auto; /* centers the container */
     width: 700px; /* sets a fixed width */
     font-family: 'Noto Serif', serif; /* applies font */
