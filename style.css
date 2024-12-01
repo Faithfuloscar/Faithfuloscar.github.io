@@ -40,6 +40,7 @@ header[role="banner"] {
     box-shadow: 5px 10px 8px; /* adds a shadow effect */
     color: #4b3d26; /* text color */
     text-shadow: 5px 10px 8px; /* text shadow effect */
+    font-size: 25px;
 }
 
 /* styling for sections */
