@@ -46,9 +46,6 @@ header[role="banner"]{
     text-decoration: underline #ffffff;
 }
 
-.summary a:hover {
-    background-color: #bbbbbb;
-}
 
 
 /* targets the main container */
@@ -92,7 +89,7 @@ header[role="banner"]{
 }
 
 /* sidebar links hover effect */
-.sidebar a:hover {
+.sidebar a:hover,.summary a:hover ,.participation a:hover, .requirements a:hover, footer a:hover{
     background-color: #FFB5C0; /* hover effect */
 }
 
@@ -117,7 +114,19 @@ color: #fdaa48;
 font-size: 22px;
 }
 
-.participation a, .requirements a {
+.participation a, .requirements a, footer a{
     color: #ffffff;
     text-decoration: underline #ffffff;
 }
+
+footer {
+    border-style: solid;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #328cc1;
+    border-color: #FFB5C0;
+    font-size: 15px;
+    padding: 10px;
+}
+
