@@ -17,6 +17,7 @@ body, h1, h2, h3, p, ul, li, a {
     margin: auto; /* centers the container */
     width: 700px; /* sets a fixed width */
     font-family: 'Noto Serif', serif; /* applies font */
+    font-weight: 400;
 }
 
 /* page wrapper class targeted */
@@ -37,7 +38,7 @@ header[role="banner"]{
     border-style: solid; /* adds a solid border */
     border-color: #FFB5C0; /* border color */
     border-radius: 15px; /* rounds the border corners */
-    box-shadow: 5px 10px 8px #888888 /* adds a shadow effect */
+    box-shadow: 5px 10px 8px #FFB5C0 /* adds a shadow effect */
 }
 
 /* styling for summary section */
@@ -110,7 +111,8 @@ header[role="banner"]{
     border-color: #FFB5C0; /* border color */
     background-color: #328cc1; /* backgrounds color */
     border-radius: 15px; /* rounds the corners */
-    box-shadow: 5px 10px 8px #888888 /* adds a shadow effect */
+    box-shadow: 5px 10px 8px #FFB5C0; /* adds a shadow effect */
+    line-height: 135%
 }
 
 /* paragraph text */
@@ -131,7 +133,7 @@ font-size: 22px; /* sets font size*/
     text-decoration: underline #ffffff; /* underlines the links */
 }
 
-/* footer styline */
+/* footer styling */
 footer {
     border-style: solid; /* adds a solid border */
     position: fixed; /* fixes footer to the bottom */
@@ -143,3 +145,8 @@ footer {
     padding: 10px; /* adds space inside the footer */
 }
 
+/* targets elements pseudo elements */
+.summary p::first-letter, .preamble p::first-letter, .explanation p::first-letter, .participation, .benefits p::first-letter, .requirements p::first-letter {
+    color: #ffffff; /* text color */
+    font-size: 20px; /* font-sizing */
+}
