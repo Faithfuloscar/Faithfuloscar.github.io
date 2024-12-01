@@ -15,3 +15,9 @@
     grid-area: main; /* assign the main content to the grid area 'main' */
     padding: 20px; /* adds padding inside the section */
 }
+
+/* Sidebar section */
+.sidebar{
+    grid-area: sidebar; /* assigns the sidebar to the grid area 'sidebar' */
+    padding: 20px; /* adds padding inside the sidebar */
+}
