@@ -21,3 +21,10 @@
     grid-area: sidebar; /* assigns the sidebar to the grid area 'sidebar' */
     padding: 20px; /* adds padding inside the sidebar */
 }
+
+/* footer section */
+footer {
+    grid-area: footer; /* assigns the footer to the grid area 'footer' */
+    text-align: center; /* center-align */
+    padding: 10px; /* adds padding inside the footer */
+}
