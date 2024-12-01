@@ -1,4 +1,4 @@
-
+/* import google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
@@ -17,72 +17,79 @@ body, h1, h2, h3, p, ul, li, a {
     display: grid; /*CSS grid layout */
     grid-template-areas: "intro intro" "main sidebar" "footer footer"; /* defines named grid areas */
     grid-template-columns: 4fr 1fr ; /* makes the main area wider than the sidebar */
-    gap: 20px; /* adds space between items */
+    gap: 20px; /* adds space between grid items */
     padding: 20px; /* adds padding around content */
-    width: auto;; /* limits page width for readability */
+    width: auto;; /* adjusts width automatically */
     margin: auto; /* centers the layout horizontally */
-    background-image: url("images/zen.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    background-image: url("images/zen.jpg"); /* sets a background image */
+    background-repeat: no-repeat; /* ensures background image doesn't repeat */
+    background-size: cover; /* covers entire page with background image */
+    font-family: "Roboto", sans-serif; /* sets font family */
+    font-weight: 400; /* sets default font weight */
+    font-style: normal; /* ensures the font style is normal */
 }
 
+/* header banner styling */
 header[role="banner"] {
-    padding: 20px;
-    border-style: solid;
-    border-color: black;
-    border-radius: 15px;
-    text-align: center;
-    background-color: #556b2f;
-    box-shadow: 5px 10px 8px;
-    color: #4b3d26;
-    text-shadow: 5px 10px 8px;
+    padding: 20px; /* adds padding inside the header */
+    border-style: solid; /* adds a solid border */
+    border-color: black;/* sets the border color */
+    border-radius: 15px; /* rounds the border corners */
+    text-align: center; /* centers text inside the header */
+    background-color: #556b2f; /* sets background color */
+    box-shadow: 5px 10px 8px; /* adds a shadow effect */
+    color: #4b3d26; /* text color */
+    text-shadow: 5px 10px 8px; /* text shadow effect */
 }
 
+/* styling for sections */
 .summary, .preamble {
-    display: flex;
-    width: auto;
-    margin: auto;
+    display: flex; /* enables a flexbox layout */
+    width: auto; /* adjusts width automatically */
+    margin: auto; /* centers content */
 
 }
 
+/* styling for sections */
 .summary , .preamble, .explanation, .participation, .benefits, .requirements, footer {
-    text-indent: 10px;
-    margin: 10px;
-    gap: 10px;
-    background-color:#556b2f;
-    border-style: solid;
-    border-radius: 15px;
-    box-shadow: 5px 10px 8px;
-    font-size: 18px;
-    padding: 10px;
+    text-indent: 10px; /* indents text */
+    margin: 10px; /* adds spacing around sections */
+    gap: 10px; /* adds space between elements */
+    background-color:#556b2f; /* background color */
+    border-style: solid; /* adds a solid border */
+    border-radius: 15px; /* rounds the border corners */
+    box-shadow: 5px 10px 8px; /* adds a shadow effect */
+    font-size: 18px; /* sets font size */
+    padding: 10px; /* adds padding inside sections */
 }
 
+/* styling for first letter in paragraphs */
 .summary p::first-letter , .preamble p::first-letter, .explanation p::first-letter, .participation p::first-letter, .benefits p::first-letter, .requirements p::first-letter {
-    color: #4b3d26;
-    font-size: 20px;
-    -webkit-text-stroke: .15px black;
+    color: #4b3d26; /* text color */
+    font-size: 20px; /* font size */
+    -webkit-text-stroke: .15px black; /* adds an outline */
 }
 
+/* link styling */
 .summary a ,.participation a , .requirements a , .sidebar a, footer a{
-    color: #6f4f1a;
-    text-decoration: underline;
-    -webkit-text-stroke: .15px #4b3d26;
+    color: #6f4f1a; /* text color */
+    text-decoration: underline; /* adds an underline */
+    -webkit-text-stroke: .15px #4b3d26; /* adds an outline to text */
 }
 
+/* hover effect for links */
 .summary a:hover ,.participation a:hover , .requirements a:hover, .sidebar a:hover , footer a:hover{
-    background-color: #8a9a5b;
-    border-radius: 10px;
+    background-color: #8a9a5b; /* background color on hover */
+    border-radius: 10px; /* adds rounded corners */
 }
 
+/* styling for section headings */
 .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .sidebar h3 {
-    text-align: center;
-    font-size: 25px;
-    color: #4b3d26;
-    text-shadow: 5px 10px 8px;
-    margin-bottom: 10px;
+    text-align: center; /* centers text */
+    font-size: 25px; /* font size */
+    color: #4b3d26; /* text color */
+    text-shadow: 5px 10px 8px; /* text shadow */
+    margin-bottom: 10px; /* adds space below heading */
 }
 
 /* main content area */
@@ -95,13 +102,13 @@ header[role="banner"] {
 .sidebar{
     grid-area: sidebar; /* assigns the sidebar to the grid area 'sidebar' */
     padding: 20px; /* adds padding inside the sidebar */
-    background-color:#556b2f;
-    border-style: solid;
-    border-radius: 15px;
-    box-shadow: 5px 10px 8px;
-    font-size: 18px;
-    height: fit-content;
-    text-align: center;
+    background-color:#556b2f; /* sets background color */
+    border-style: solid; /* adds a solid border */
+    border-radius: 15px; /* rounds border corners */
+    box-shadow: 5px 10px 8px; /* adds shadow to border */
+    font-size: 18px; /* font size */
+    height: fit-content; /* adjusts the height of column*/
+    text-align: center; /* aligns text */
 }
 
 /* footer section */
