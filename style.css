@@ -1,4 +1,13 @@
 
+/* general reset(ensures consistent styling): removes  defaults and sets box-sizing */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0; /* removes the default margin */
+    padding: 0; /* removes the default padding */
+    list-style: none; /* removes default list styles */
+    text-decoration: none; /* removes underline from links */
+    box-sizing: border-box; /* Ensures padding is included in the element */
+}
+
 /* container for the whole page */
 .page-wrapper {
     display: grid; /*CSS grid layout */
@@ -8,12 +17,46 @@
     padding: 20px; /* adds padding around content */
     max-width: 1200px; /* limits page width for readability */
     margin: auto; /* centers the layout horizontally */
+    background-color: burlywood;
+}
+
+header[role="banner"] {
+    padding: 20px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: darkgreen;
+    box-shadow: 5px 10px 8px;
+}
+
+.summary p, .preamble p{
+    text-indent: 10px;
+    margin: 10px;
+    gap: 10px;
+    background-color:darkgreen;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px;
+
+}
+
+.summary a {
+    color: rgb(82, 61, 36);
+}
+.preamble h3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
 }
 
 /* main content area */
 .main {
     grid-area: main; /* assign the main content to the grid area 'main' */
     padding: 20px; /* adds padding inside the section */
+    border-style: dashed;
+    border-color: blue;
 }
 
 /* Sidebar section */
@@ -27,4 +70,16 @@ footer {
     grid-area: footer; /* assigns the footer to the grid area 'footer' */
     text-align: center; /* center-align */
     padding: 10px; /* adds padding inside the footer */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) /* applies to screens width 768px or less */ {
+    .page-wrapper {
+        grid-template-areas: "intro" "main" "sidebar" "footer"; /* adjust layout to these sections */
+        grid-template-columns: 1fr; /* single column layout */
+    }
+
+    .main, .sidebar {
+        margin-bottom: 20px; /* adds spacing between sections */
+    }
 }
