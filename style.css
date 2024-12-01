@@ -125,7 +125,7 @@ header[role="banner"]{
 /* headings styling for sections */
 .summary h3, .preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3, .zen-resources h3, .design-archives h3, .design-selection h3{
 color: #fdaa48; /* text color */
--webkit-text-stroke: .25px #a57f4e; /* adds a outline */
+-webkit-text-stroke: .35px #a57f4e; /* adds a outline */
 font-size: 22px; /* sets font size*/
 }
 
