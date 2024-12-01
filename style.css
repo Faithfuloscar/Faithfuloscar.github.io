@@ -12,57 +12,80 @@ body, h1, h2, h3, p, ul, li, a {
 .page-wrapper {
     display: grid; /*CSS grid layout */
     grid-template-areas: "intro intro" "main sidebar" "footer footer"; /* defines named grid areas */
-    grid-template-columns: 2fr 1fr; /* makes the main area wider than the sidebar */
+    grid-template-columns: 2fr 1fr 1fr; /* makes the main area wider than the sidebar */
     gap: 20px; /* adds space between items */
     padding: 20px; /* adds padding around content */
     max-width: 1200px; /* limits page width for readability */
     margin: auto; /* centers the layout horizontally */
-    background-color: burlywood;
+    background-color: #6f4f1a;
 }
 
 header[role="banner"] {
     padding: 20px;
+    display: inline-block;
     border-style: solid;
     border-color: black;
-    border-width: 2px;
     border-radius: 15px;
     text-align: center;
-    background-color: darkgreen;
+    background-color: #556b2f;
     box-shadow: 5px 10px 8px;
+    color: #4b3d26;
+    text-shadow: 5px 10px 8px;
 }
 
-.summary p, .preamble p{
+.summary, .preamble {
+    display: flex;
+    width: auto;
+    margin: auto;
+
+}
+
+.summary , .preamble, .explanation, .participation, .benefits, .requirements {
     text-indent: 10px;
     margin: 10px;
     gap: 10px;
-    background-color:darkgreen;
+    background-color:#556b2f;
     border-style: solid;
     border-radius: 15px;
     box-shadow: 5px 10px 8px;
-
+    font-size: 18px;
+    padding: 10px;
 }
 
-.summary a {
-    color: rgb(82, 61, 36);
+.summary a ,.participation a , .requirements a , .sidebar a{
+    color: #6f4f1a;
+    text-decoration: underline;
 }
-.preamble h3 {
+
+.summary a:hover ,.participation a:hover , .requirements a:hover, .sidebar a:hover {
+    background-color: #8a9a5b;
+    border-radius: 10px;
+}
+
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3 {
     text-align: center;
     font-size: 25px;
-    margin-top: 25px;
+    color: #4b3d26;
+    text-shadow: 5px 10px 8px;
+    margin-bottom: 10px;
 }
 
 /* main content area */
 .main {
     grid-area: main; /* assign the main content to the grid area 'main' */
     padding: 20px; /* adds padding inside the section */
-    border-style: dashed;
-    border-color: blue;
 }
 
 /* Sidebar section */
 .sidebar{
     grid-area: sidebar; /* assigns the sidebar to the grid area 'sidebar' */
     padding: 20px; /* adds padding inside the sidebar */
+    background-color:#556b2f;
+    border-style: solid;
+    border-radius: 15px;
+    box-shadow: 5px 10px 8px;
+    font-size: 18px;
+    height: fit-content;
 }
 
 /* footer section */
