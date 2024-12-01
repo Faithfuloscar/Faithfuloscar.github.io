@@ -15,14 +15,15 @@ body, h1, h2, h3, p, ul, li, a {
     grid-template-columns: 2fr 1fr 1fr; /* makes the main area wider than the sidebar */
     gap: 20px; /* adds space between items */
     padding: 20px; /* adds padding around content */
-    max-width: 1200px; /* limits page width for readability */
+    width: auto;; /* limits page width for readability */
     margin: auto; /* centers the layout horizontally */
-    background-color: #6f4f1a;
+    background-image: url("images/zen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header[role="banner"] {
     padding: 20px;
-    display: inline-block;
     border-style: solid;
     border-color: black;
     border-radius: 15px;
@@ -40,7 +41,7 @@ header[role="banner"] {
 
 }
 
-.summary , .preamble, .explanation, .participation, .benefits, .requirements {
+.summary , .preamble, .explanation, .participation, .benefits, .requirements, footer {
     text-indent: 10px;
     margin: 10px;
     gap: 10px;
@@ -52,12 +53,13 @@ header[role="banner"] {
     padding: 10px;
 }
 
-.summary a ,.participation a , .requirements a , .sidebar a{
+.summary a ,.participation a , .requirements a , .sidebar a, footer a{
     color: #6f4f1a;
     text-decoration: underline;
+    -webkit-text-stroke: .15px #4b3d26;
 }
 
-.summary a:hover ,.participation a:hover , .requirements a:hover, .sidebar a:hover {
+.summary a:hover ,.participation a:hover , .requirements a:hover, .sidebar a:hover , footer a:hover{
     background-color: #8a9a5b;
     border-radius: 10px;
 }
@@ -94,6 +96,7 @@ footer {
     text-align: center; /* center-align */
     padding: 10px; /* adds padding inside the footer */
 }
+
 
 /* Responsive design for small screens */
 @media (max-width: 768px) /* applies to screens width 768px or less */ {
