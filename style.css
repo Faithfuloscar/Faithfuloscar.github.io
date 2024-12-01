@@ -112,7 +112,7 @@ header[role="banner"]{
     background-color: #328cc1; /* backgrounds color */
     border-radius: 15px; /* rounds the corners */
     box-shadow: 5px 10px 8px #FFB5C0; /* adds a shadow effect */
-    line-height: 135%
+    line-height: 135% /* applies vertical text space */
 }
 
 /* paragraph text */
