@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --cream: #f5f0e8;
+      --frost: #85b8ff;
       --ink: #1a1612;
       --midnight: #041352;
       --sand: #d9cdb8;
@@ -13,7 +13,7 @@
     html { scroll-behavior: smooth; }
 
     body {
-      background: var(--cream);
+      background: var(--frost);
       color: var(--ink);
       font-family: var(--font-display);
       font-weight: 300;
@@ -156,7 +156,7 @@
     .hero-right::after {
       content: '';
       position: absolute; inset: 0;
-      background: linear-gradient(135deg, transparent 60%, var(--cream) 100%);
+      background: linear-gradient(135deg, transparent 60%, var(--frost) 100%);
     }
     .hero-number {
       position: absolute;
@@ -176,7 +176,7 @@
       font-size: 0.7rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--muted);
+      color: var(--frost);
     }
 
     /* ─── SECTION SHARED ─── */
@@ -287,7 +287,7 @@
     .project-name {
       font-size: 1.4rem;
       font-weight: 300;
-      color: var(--cream);
+      color: var(--frost);
       line-height: 1.2;
     }
     .project-arrow {
