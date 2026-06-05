@@ -1,6 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
+      --white: #fff;
       --ice: #cce4ff;
       --ink: #1a1612;
       --midnight: #041352;
@@ -57,6 +58,7 @@
 
     /* ─── NAV ─── */
     nav {
+      background: var(--white);
       position: fixed; top: 0; left: 0; right: 0;
       display: flex; justify-content: space-between; align-items: center;
       padding: 1.8rem 4rem;
