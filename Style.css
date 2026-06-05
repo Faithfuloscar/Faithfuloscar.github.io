@@ -58,7 +58,7 @@
 
     /* ─── NAV ─── */
     nav {
-      color: var(--white);
+      background-color:  var(--white);
       position: fixed; top: 0; left: 0; right: 0;
       display: flex; justify-content: space-between; align-items: center;
       padding: 1.8rem 4rem;
