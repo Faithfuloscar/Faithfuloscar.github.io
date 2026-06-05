@@ -5,7 +5,7 @@
       --ice: #cce4ff;
       --ink: #1a1612;
       --midnight: #041352;
-      --sand: #d9cdb8;
+      --electric: #2563eb;
       --saphire: #1139b0;
       --font-display: 'Cormorant Garamond', Georgia, serif;
       --font-mono: 'DM Mono', monospace;
@@ -152,7 +152,7 @@
     .hero-right {
       position: relative;
       overflow: hidden;
-      background: var(--sand);
+      background: var(--electric);
     }
     .hero-right::after {
       content: '';
@@ -195,7 +195,7 @@
       content: '';
       flex: 1;
       height: 1px;
-      background: var(--sand);
+      background: var(--electric);
       max-width: 80px;
     }
     .section-title {
@@ -211,7 +211,7 @@
       grid-template-columns: 1fr 2fr;
       gap: 6rem;
       align-items: start;
-      border-top: 1px solid var(--sand);
+      border-top: 1px solid var(--electric);
     }
     .about-bio {
       margin-top: 2.5rem;
@@ -232,14 +232,14 @@
       letter-spacing: 0.1em;
       text-transform: uppercase;
       padding: 0.4rem 0.9rem;
-      border: 1px solid var(--sand);
+      border: 1px solid var(--electric);
       color: var(--saphire);
       transition: border-color 0.2s, color 0.2s;
     }
     .skill-tag:hover { border-color: var(--midnight); color: var(--midnight); }
 
     /* ─── WORK ─── */
-    #work { border-top: 1px solid var(--sand); }
+    #work { border-top: 1px solid var(--electric); }
     .work-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 5rem; }
     .projects-grid {
       display: grid;
@@ -249,7 +249,7 @@
     .project-card {
       position: relative;
       overflow: hidden;
-      background: var(--sand);
+      background: var(--electric);
       aspect-ratio: 4/5;
       cursor: none;
     }
@@ -295,13 +295,13 @@
       margin-top: 1rem;
       font-family: var(--font-mono);
       font-size: 0.65rem;
-      color: var(--sand);
+      color: var(--electric);
       letter-spacing: 0.1em;
     }
 
     /* ─── EXPERIENCE ─── */
     #experience {
-      border-top: 1px solid var(--sand);
+      border-top: 1px solid var(--electric);
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 6rem;
@@ -309,13 +309,13 @@
     .exp-list { margin-top: 1rem; }
     .exp-item {
       padding: 2.5rem 0;
-      border-bottom: 1px solid var(--sand);
+      border-bottom: 1px solid var(--electric);
       display: grid;
       grid-template-columns: 1fr 2fr;
       gap: 2rem;
       transition: background 0.2s;
     }
-    .exp-item:first-child { border-top: 1px solid var(--sand); }
+    .exp-item:first-child { border-top: 1px solid var(--electric); }
     .exp-meta { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.08em; color: var(--saphire); }
     .exp-year { color: var(--midnight); margin-bottom: 0.4rem; }
     .exp-company { font-size: 1.2rem; font-weight: 400; margin-bottom: 0.3rem; }
@@ -324,7 +324,7 @@
 
     /* ─── CONTACT ─── */
     #contact {
-      border-top: 1px solid var(--sand);
+      border-top: 1px solid var(--electric);
       min-height: 60vh;
       display: flex;
       flex-direction: column;
@@ -338,7 +338,7 @@
       position: absolute;
       font-size: clamp(6rem, 18vw, 20rem);
       font-weight: 300;
-      color: var(--sand);
+      color: var(--electric);
       letter-spacing: -0.05em;
       line-height: 1;
       pointer-events: none;
@@ -394,7 +394,7 @@
 
     /* ─── FOOTER ─── */
     footer {
-      border-top: 1px solid var(--sand);
+      border-top: 1px solid var(--electric);
       padding: 2rem 4rem;
       display: flex;
       justify-content: space-between;
