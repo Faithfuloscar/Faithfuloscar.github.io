@@ -63,7 +63,6 @@
       display: flex; justify-content: space-between; align-items: center;
       padding: 1.8rem 4rem;
       z-index: 100;
-      mix-blend-mode: multiply;
     }
     .nav-logo {
       font-family: var(--font-mono);
